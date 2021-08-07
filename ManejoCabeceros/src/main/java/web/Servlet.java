@@ -34,7 +34,7 @@ public class Servlet extends HttpServlet{
         Enumeration cabeceros = request.getHeaderNames();
         while(cabeceros.hasMoreElements()){
             String nombreCabecero = (String) cabeceros.nextElement();
-            out.print("<b>" + nombreCabecero + "</b>");
+            out.print("<b>" + nombreCabecero + "</b>:");
             out.print(request.getHeader(nombreCabecero));
             out.print("<br>");
         }
